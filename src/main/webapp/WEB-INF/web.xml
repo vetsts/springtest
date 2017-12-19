@@ -1,0 +1,47 @@
+
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+		
+	</welcome-file-list>
+  
+
+  <servlet>
+	<servlet-name>GeneralServlet</servlet-name>
+    <servlet-class>com.students.web.GeneralServlet</servlet-class>
+ </servlet>
+  
+ <servlet-mapping>
+	<servlet-name>GeneralServlet</servlet-name>
+	<url-pattern>/update</url-pattern>
+    <url-pattern>/index</url-pattern>
+	<url-pattern>/delete</url-pattern>
+	<url-pattern>/edit</url-pattern>
+	<url-pattern>/marks</url-pattern>
+    <url-pattern>/markadd</url-pattern>
+	<url-pattern>/subjectadd</url-pattern>
+	<url-pattern>/studentadd</url-pattern>
+	<url-pattern>/edit-student</url-pattern>
+	<url-pattern>/edit-subject</url-pattern>
+	<url-pattern>/delete-student</url-pattern>
+	<url-pattern>/delete-subject</url-pattern>
+	<url-pattern>/subjects</url-pattern>
+	<url-pattern></url-pattern>
+
+ </servlet-mapping>
+ 
+ <servlet>
+	<servlet-name>ExitServlet</servlet-name>
+    <servlet-class>com.students.web.ExitServlet</servlet-class>
+ </servlet>
+  
+ <servlet-mapping>
+	<servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/exit</url-pattern>
+ </servlet-mapping>
+ 
+ <listener>
+		<listener-class>com.students.web.SessionListener</listener-class>
+	</listener>
+</web-app>
